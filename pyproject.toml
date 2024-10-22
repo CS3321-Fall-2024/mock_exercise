@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mock-exercise"
+version = "0.1.0"
+description = "Mock assignment for mocking in class"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "mock_exercise", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-mock = "^3.14.0"
+mock = "^5.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
